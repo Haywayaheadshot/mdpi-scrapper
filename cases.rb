@@ -17,6 +17,8 @@ class Cases < App
 
   def show_menu(par)
     @user_pick = {
+      1 => 'create_csv',
+      2 => 'download_pdf',
       3 => 'exit_app'
     }
 
