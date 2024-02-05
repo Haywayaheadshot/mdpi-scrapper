@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    chromium-browser (0.0.3)
     json (2.7.1)
     language_server-protocol (3.17.0.3)
     parallel (1.24.0)
@@ -32,6 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  chromium-browser (~> 0.0.3)
   rubocop (>= 1.0, < 2.0)
 
 BUNDLED WITH
