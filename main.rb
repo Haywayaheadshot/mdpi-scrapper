@@ -1,4 +1,4 @@
-require_relative './cases'
+require_relative 'cases'
 
 class Main
   def start
