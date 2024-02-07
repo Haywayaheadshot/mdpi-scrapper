@@ -9,3 +9,8 @@ gem 'nokogiri'
 
 # loading env files
 gem 'dotenv'
+
+# Async methods
+gem 'async-http'
+gem 'async'
+gem 'httparty'
