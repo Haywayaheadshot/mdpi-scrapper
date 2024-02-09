@@ -20,6 +20,6 @@ class CSVCreation
 
   def generate_csv_file(pdf_links)
     # use pdf_links as the content
-    pdf_links.join("\n") # Convert pdf_links array to a string with each link on a new line
+    pdf_links.join("\n")
   end
 end

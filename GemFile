@@ -14,3 +14,6 @@ gem 'dotenv'
 gem 'async-http'
 gem 'async'
 gem 'httparty'
+
+# Catching bugs
+gem 'pry'
