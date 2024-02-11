@@ -3,3 +3,17 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 # Ublocking web protocols for scrapping
 gem 'chromium-browser', '~> 0.0.3'
+
+# scrapping web
+gem 'nokogiri'
+
+# loading env files
+gem 'dotenv'
+
+# Async methods
+gem 'async-http'
+gem 'async'
+gem 'httparty'
+
+# Catching bugs
+gem 'pry'
