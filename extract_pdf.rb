@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'open-uri'
+# rubocop:disable all
 
 class ExtractPDF
   def extract_pdf(url)

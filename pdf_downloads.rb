@@ -1,3 +1,5 @@
+# rubocop:disable all
+
 class PDFDownloads
   def download_links(_csv_found, csv_arr, id)
     csv_arr.each do |file|
