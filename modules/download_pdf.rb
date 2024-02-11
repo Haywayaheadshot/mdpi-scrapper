@@ -5,7 +5,7 @@ require 'pry'
 module DownloadPDF
   def download_pdf
     if @csv_arr.empty?
-      puts "CSV array is empty. Please populate @csv_arr before downloading PDFs."
+      puts 'CSV array is empty. Please populate @csv_arr before downloading PDFs.'
       return
     end
 
@@ -14,9 +14,9 @@ module DownloadPDF
 
     csv_found = false
     @pdf_downloads.download_links(csv_found, @csv_arr, id)
-    
-    unless csv_found
-      puts "The CSV ID you entered does not exist."
-    end
+
+    return if csv_found
+
+    puts 'The CSV ID you entered does not exist.'
   end
 end
