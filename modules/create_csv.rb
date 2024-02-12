@@ -3,10 +3,10 @@ require 'dotenv/load'
 module CreateCSV
   def create_csv
     puts 'Please input url'
-    gets.chomp.to_s
+    url = gets.chomp.to_s
     puts 'Please copy the csv id and paste after choosing command 2'
 
-    pdf_links = @extractor.extract_pdf(ENV.fetch('USER_URL', nil))
+    pdf_links = @extractor.extract_pdf(url.to_s)
 
     csv_file = @csv_creation.csv_creation(pdf_links)
 
