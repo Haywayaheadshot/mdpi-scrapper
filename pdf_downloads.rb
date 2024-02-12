@@ -33,7 +33,7 @@ class PDFDownloads
     end_point = url.split('/').last
     full_path = File.join(path, "#{end_point}.pdf")
     File.open(full_path, 'wb') do |file|
-      file << open(url).read
+      file << URI.open(url).read
     end
   rescue StandardError => e
     puts "Error downloading #{url}: #{e.message}"
